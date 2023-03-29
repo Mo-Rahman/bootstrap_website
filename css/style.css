@@ -1,0 +1,223 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+:root {
+  --pink-background-colour: #ffc0cb;
+  --off-white-colour: #f8f8f8;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Added to fix the white space on the side - but seems to be working without it */
+/* html,
+body {
+  overflow-x: hidden;
+} */
+
+@media screen and (max-width: 414px) {
+  .title-fix {
+    font-size: 1.8rem !important;
+  }
+}
+
+.container-fluid {
+  padding: 0 10% 0 10%
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+
+/* IMAGE --To stop the image going out of it's container */
+.sweets-img {
+  /* transform: scale(0.8); */
+  /* transform: ; */
+  transform: rotate(20deg);
+  width: 60%;
+  border-radius: 8%;
+  /* z-index: -1; */
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+
+/* All image's width set to 100% - This makes it fit into it's container size? */
+img {
+  width: 100%;
+}
+
+
+/* Navigation bar */
+
+.navbar {
+  margin-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+nav .navbar-nav li a,
+.navbar-toggler {
+  color: #000 !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
+}
+
+.dropdown-menu {
+  background-color: var(--pink-background-colour);
+}
+
+/* Custom togger targetting the BURGER  */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Burger border */
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0, 0, 0);
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 0.7rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat-light', sans-serif;
+}
+
+/* Download button */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title section */
+
+#title {
+  background-color: #f1dddf;
+  background-color: var(--pink-background-colour);
+  /* color: #fff; */
+  padding-bottom: 4%;
+}
+
+#title p {
+  color: var(--off-white-colour)
+}
+
+/* .title {
+  text-align: center;
+  margin-top: 10rem;
+} */
+/* Features section */
+
+#features {
+  background-color: var(--off-white-colour);
+  padding: 2% 10%;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+#features i {
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+#features i:hover {
+  color: var(--pink-background-colour);
+}
+
+/* Testimonial section */
+
+#testimonials {
+  background-color: var(--pink-background-colour);
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+  color: var(--off-white-colour);
+}
+
+.testimonial-image {
+  width: 50%;
+  /* border-radius: 100%; */
+  margin: 1.5rem;
+}
+
+.carousel-item {
+  padding: 5% 15%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  /*, .carousel-indicators */
+  filter: invert(100%);
+}
+
+
+/* Press */
+
+#press {
+  background-color: var(--pink-background-colour);
+  padding-bottom: 5%;
+  text-align: center;
+  color: var(--off-white-colour);
+}
+
+.press-logo {
+  width: 50%;
+  padding: 3% 0;
+  border-radius: 100%;
+}
+
+/* Footer */
+
+#footer {
+  background-color: var(--off-white-colour);
+  text-align: center;
+  padding: 1% 0;
+}
+
+#footer .social {
+  margin: 1% 0;
+}
+
+.social i {
+  margin: 0 2%;
+}
+
+#footer p {
+  font-size: 0.75rem
+}
